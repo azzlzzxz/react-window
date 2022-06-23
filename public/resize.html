@@ -1,0 +1,32 @@
+<!--
+ * @Author: xinxu azzlzzxz@gmail.com
+ * @Date: 2022-06-19 20:42:51
+ * @LastEditors: xinxu azzlzzxz@gmail.com
+ * @LastEditTime: 2022-06-19 20:57:31
+ * @FilePath: /VirtualList/public/resize.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>resize</title>
+  </head>
+  <body>
+    <img id="logo" />
+
+    <script>
+      let logo = document.getElementById("logo");
+      console.log(logo.offsetHeight);
+      const resizeObserver = new ResizeObserver((entries) => {
+        console.log("resize", logo.offsetHeight);
+      });
+      resizeObserver.observe(logo);
+      setTimeout(() => {
+        logo.src =
+          "https://static.tuandongdong.cn/dev/pic/20220513/08600c9a91ff38f7440466ad8dffa488.jpg";
+      }, 1000);
+    </script>
+  </body>
+</html>
