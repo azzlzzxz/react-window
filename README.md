@@ -2,7 +2,7 @@
  * @Author: xinxu azzlzzxz@gmail.com
  * @Date: 2022-06-16 16:28:26
  * @LastEditors: xinxu azzlzzxz@gmail.com
- * @LastEditTime: 2022-06-23 16:41:10
+ * @LastEditTime: 2022-06-23 20:37:57
  * @FilePath: /VirtualList/README.md
 -->
 # 如果有海量数据在浏览器里一次性渲染会有以下问题
@@ -43,3 +43,4 @@ IntersectionObserver接口(从属于Intersection Observer API)为开发者提供
 - [react-window 源码](https://github.com/bvaughn/react-window)
 - [Taro 虚拟列表源码](https://github.com/NervJS/taro/tree/next/packages/taro-components/virtual-list/react)
 - [pnpm](https://pnpm.io/zh/)
+- [react-window实现原理](https://github.com/azzlzzxz/react-window)
